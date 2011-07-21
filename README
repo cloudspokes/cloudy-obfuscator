@@ -1,0 +1,12 @@
+The Cloudy Cloud Obfuscated Code Challenge
+
+URL: http://www.cloudspokes.com/challenge_detail.html?contestID=125
+Challenge end date: Mon Mar 14 05:00:00 GMT 2011
+
+Description
+===========
+We spend most of our time showing how clear and easy the cloud can make development. To have a little fun, we wanted to see who can do the best job of making the cloud cloudy. The goal of this contest is to create a functional piece of code that is creatively obfuscated in its formatting. This contest is meant to be similar to the International <a href="http://en.wikipedia.org/wiki/International_Obfuscated_C_Code_Contest" target="_blank">Obfuscated C Code Contest</a>. Your code MUST be written by you. Any submissions stolen/slightly modified from the internet will be disqualified. This is meant to be a fun contest for participants.
+
+Requirements
+============
+Code submitted must provide some function that must be documented with the submission or else be rejected. Code must be in one of the following languages: C#, perl, python, javascript, java, apex with detailed descriptions of how to build and run the program on a public cloud platform. Identify which code file contains the obfuscated code in a README.txt file or similar documentation.

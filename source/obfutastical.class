@@ -1,0 +1,71 @@
+public class Obfustastical {
+
+public String obfusc { get; set; }
+
+public Obfustastical() {
+
+  obfusc = '';
+  
+  obfusc +=  'var fps=10;var timeInterval=1000/fps;var canvas=null;var context=null;var iteration' +'s=12;var imageObj=new Image(); v'; 
+  obfusc +=  'ar backgroundLoaded=false;function drawBranches(startX,startY,trunkWidth,level){if  (level<iterations){var changeX=100/'; 
+  obfusc +=  '(level+1);var changeY=100/(level+1)+20;var bottomRightX=startX+Math.random()*'          +'changeX;var bottomRightY=star'; 
+  obfusc +=  'tY+Math.random()*changeY;var bottomLeftX=startX-Math.random()*changeX;var bot'           +'tomLeftY=startY+(Math.random';
+  obfusc +=  '()*changeY)*.2;context.beginPath();context.moveTo(startX+trunkWidth/4,startY)'            +';context.lineTo(bottomRight'; 
+  obfusc +=  'X,bottomRightY);context.lineWidth=trunkWidth;context.strokeStyle="white";conte'          +'xt.lineCap="round";context.s';
+  obfusc +=  'hadowColor="white";context.shadowBlur=10;context.stroke();drawBranches(bottomRi'       +'ghtX,bottomRightY,trunkWidth*0'; 
+  obfusc +=  '.6,level+1,true);if(level>1){context.beginPath();context.moveTo(startX-trunkWi'           +'dth/4,startY);context.lineT'; 
+  obfusc +=  'o(bottomLeftX,bottomLeftY);context.lineWidth=trunkWidth;context.stroke'                         +'Style="white";context'; 
+  obfusc +=  '.lineCap="round";context.shadowColor="white";context.shado'    +'w'                                 +'Blur=10;context.s'; 
+  obfusc +=  'troke();drawBranches(bottomLeftX,bottomLeftY,trunkWidth*0.6'                                           +'     '+',level';
+  obfusc +=  '+1,true);}}}function init(){canvas=document.getElementById("'                                                +'x");cont';
+  obfusc +=  'ext=canvas.getContext("2d");initStageObjects();drawStage'                                                  +'Objects();';
+  obfusc +=  'setInterval(updateStage,timeInterval);}function updat'                                                       +'eStage()'; 
+  obfusc +=  '{clearCanvas();drawStageObjects();}function initStage'                                                         +'Object';
+  obfusc +=  's(){imageObj.onload=function(){backgroundLoaded=true'                                                           +';}\ni'; 
+  obfusc +=  'mageObj.src=mbg;}function drawStageObjects(){context'                                                            + '.gl';   
+  obfusc +=  'obalAlpha=1;context .shadowBlur=0;context.beginPat'                                                              +'h();';
+  obfusc +=  'context.fillRect(0,0,canvas.w'  +'idth,canvas.hei'                                                               +'ght)'; 
+  obfusc +=  ';context.drawImage(im'   +''       +'ageObj,0,0)'                                                                +';if(b'; 
+  obfusc +=  'ackgroundLoaded&&Math.'                +'random'                                                                 +'()>0'; 
+  obfusc +=  '.95){drawBranches(Ma'                     + 'th'                                                                 + '.ra'; 
+  obfusc +=  'ndom()*canvas.widt'                         +''                                                                   +'h,-';
+  obfusc +=  '10,5,0 );}else{c'+                           ''                                                                 +'ontex';
+  obfusc +=  't.beginPath();c'+                            ''                                                                 +'ontex'; 
+  obfusc +=  't.globalA'+    ''                             +                                                               'lpha=0.8'; 
+  obfusc +=  ';contex' +                                                                                                 't.fillRect(';
+  obfusc +=  '0,0,canva'      +                                                                                            's.width,c';
+  obfusc +=  'anvas.height' +''                             +                                                                ');}}fun';
+  obfusc +=  'ction clearCanva'+                           ''                                                                 +'s(){c';
+  obfusc +=  'ontext.clearRect('                          +''                                                                  +'0,0,';
+  obfusc +=  'canvas.width, canv'+                       'as.'                                                                 +'heig';
+  obfusc +=  'ht);}//unction getCo' +                  'okie'                                                                  +'(nam'; 
+  obfusc +=  'e){var start=document'  +             '.cookie.'+                                                                'index';
+  obfusc +=  'Of(name+"=");var len='   +'sta' +'art+name.length'                                                               +'+nam'; 
+  obfusc +=  'e.length+1;if((!start)&&(name!=document.cookie.su'                                                               +'be.l';
+  obfusc +=  'ength+1;if((!start)&&(name!=document.cookie.substr'                                                                +'in'; 
+  obfusc +=  'g(0,name.length))){return null}if(start==-1)return  '                                                           +'null;'; 
+  obfusc +=  'var end=document.cookie.indexOf(";",len);if(end==-1)e'                                                         +'nd=doc'; 
+  obfusc +=  'ument.cookie.length;return unescape(document.cookie.l' +                                                      'ength;re';
+  obfusc +=  'turn unescape(document.cookie.substring(len,end))}funct' +                                                  'ion setCoo'; 
+  obfusc +=  'kie(name,value,expires,path,domain,secure){var today=new  '                                              +  'Date();tod'; 
+  obfusc +=  'ay.setTime(today.getTime());if(expires){expires=expires*1000*'+                                         ''    +'60*60*2'; 
+  obfusc +=  '4}var expires_date=new Date(today.getTime()+(expires));d'+     ''                                     +'o'     +'cument'; 
+  obfusc +=  '.cookie=name+"="+escape( value)+((expires)?";expires="+ex'+   'pires'                             +'_date.toGMTString()';
+  obfusc +=  ':"")+ ((path)?";path="+path:"")+((domain)?";domain="+domain:"")+((se' +''                    +'cure)?";secure":"")}func'; 
+  obfusc +=  'tion deleteCookie(name,path,domain){if(getCookie(name))document.cookie=name+"="+'     +'((path)?";path="+path:"")+((dom';
+  obfusc +=  'ain)?";domain="+domain:"")+";expires=Thu, 01-Jan-1970 00:00:01 GMT"}randodom()'         +'g X,bottomRightY,trunkWidth*0'; 
+  obfusc +=  '(level+1);var changeY=100/(level+1)+20;var bottomRightX=startX+Math.random()*'            +'angeX;var bottomRightY=star'; 
+  obfusc +=  'tY+Math.random()*changeY;var bottomLeftX=startX-Math.random()*changeX;var bo'             +'tmLeftY=startY+(Math.random';
+  obfusc +=  '()*changeY)*.2;context.beginPath();context.moveTo(startX+trunkWidth/4,startY)'            +';context.lineTo(bottomRight'; 
+  obfusc +=  '(level+1);var changeY=100/(level+1)+20;var bottomRightX=startX+Math.random()*d'         +'changeX;var bottomRightY=star'; 
+  obfusc +=  '.6,level+1,true);if(level>1){context.beginPath();context.moveTo(startX-trunkWidt'      +'dth/4,startY);context.lineTood'; 
+  obfusc +=  'ar backgroundLoaded=false;function drawBranches(startX,startY,trunkWidth,level){if  (level<iterations){var changeX=100/'; 
+  obfusc +=  'var fps=10;var timeInterval=1000/fps;var canvas=null;var context=null;var iteration' +'s=12;var imageObj=new Image();  '; 
+ 
+  
+  
+}  
+
+
+
+}

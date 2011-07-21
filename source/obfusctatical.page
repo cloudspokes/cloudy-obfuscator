@@ -1,0 +1,17 @@
+<apex:page controller="Obfustastical" showHeader="false" cache="false">
+
+    <head>
+    
+        <script>
+        
+           var mbg = '{!$Resource.fractal}';
+           <apex:outputText value="{!obfusc}" escape="false"/>  
+        
+        </script>
+    
+    </head>
+    <body onload="init()" style="background:black;">
+        <canvas id="x" width="484" height="364"></canvas>
+    </body>
+        
+</apex:page>
